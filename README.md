@@ -1,25 +1,33 @@
 # 🚗 CAN Signal Dashboard
-This Streamlit app visualizes and analyzes decoded signals from CAN logs. Upload your `.asc` and `.dbc` files to:
 
-- Decode messages and signals
-- Select multiple signals from different messages
-- Plot and compare signals over time
-- Export plots as PNG
+A clean and interactive Streamlit app to decode and visualize CAN bus signals from `.asc` logs using `.dbc` files.  
+Perfect for remote diagnostics, validation reviews, or embedded systems debugging.
 
-## 💡 Use Case
-Useful for embedded software engineers, test/validation teams, and diagnostics engineers who need to analyze CAN data remotely or without licensed tools.
+---
 
-## 📦 Built With
+## 📌 Features
+- Upload `.asc` + `.dbc` to decode CAN messages
+- Select multiple messages and signals to plot together
+- Interactive, responsive Plotly charts
+- Download plots as PNG images
+- Helpful UI with tabs for Upload, Plot, and About sections
+
+---
+
+## 🧰 Stack
+Built with:
 - Python
 - Streamlit
-- cantools
-- python-can
 - Plotly
+- cantools & python-can
+- pandas
 
-## 🏁 How to Run
+---
+
+## 🚀 How to Run Locally
 
 ```bash
-git clone https://github.com/your-username/can-dashboard.git
-cd can-dashboard
+git clone https://github.com/MK9ei82/can-signal-dashboard.git
+cd can-signal-dashboard
 pip install -r requirements.txt
 streamlit run main.py
